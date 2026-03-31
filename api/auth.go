@@ -52,7 +52,7 @@ func Login(c *gin.Context) {
 		token,       // value
 		3600,        // maxAge (seconds)
 		"/",         // path
-		"localhost", // domain (important)
+		"", // domain (important)
 		false,       // secure (true in production with HTTPS)
 		true,        // httpOnly (VERY IMPORTANT)
 	)
@@ -69,7 +69,7 @@ func Logout(c *gin.Context) {
 		"",
 		-1, // expire immediately
 		"/",
-		"localhost",
+		"",
 		false,
 		true,
 	)
